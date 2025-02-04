@@ -13,17 +13,6 @@
 </head>
 
 <style>
-    @media screen and (max-width:768px) {
-        #table-section {
-
-            th:nth-child(2),
-            td:nth-child(2) {
-
-                display: none;
-            }
-        }
-    }
-
     #table-section {
 
         th:last-child,
@@ -35,6 +24,17 @@
         th:nth-child(3),
         td:nth-child(3) {
             text-wrap: nowrap;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        #table-section {
+
+            th:nth-child(2),
+            td:nth-child(2) {
+
+                display: none;
+            }
         }
     }
 </style>
