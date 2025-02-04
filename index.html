@@ -29,6 +29,12 @@
         th:last-child,
         td:last-child {
             text-align: center;
+            text-wrap: nowrap;
+        }
+
+        th:nth-child(3),
+        td:nth-child(3) {
+            text-wrap: nowrap;
         }
     }
 </style>
@@ -74,7 +80,7 @@
 
     </header>
 
-    <main class="px-2 px-md-5 d-lg-flex justify-content-lg-center container-md">
+    <main class="px-2 px-md-5 d-xl-flex justify-content-xl-center container-md">
 
         <section id="table-section" class="w-100">
             <container class="d-flex justify-content-between  py-4">
@@ -87,7 +93,7 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>Titolo</th>
+                            <th class="w-50">Titolo</th>
                             <th>Data prestito</th>
                             <th>Stato</th>
                             <th class="text-center">Azioni</th>
