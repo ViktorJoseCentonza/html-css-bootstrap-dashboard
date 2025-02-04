@@ -13,16 +13,13 @@
 </head>
 
 <style>
-    .btn {
-        padding: 0rem 0.1rem;
-        border-radius: 0.4rem;
-    }
+
 </style>
 
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img style="width: 60px;" src="assets/img/duck.png" alt="#"></a>
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -31,7 +28,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <ul class="navbar-nav me-auto mt-2 ">
                         <li class="nav-item">
                             <a class="nav-link active" href="#" aria-current="page">Catalogo libri
                                 <span class="visually-hidden">(current)</span></a>
@@ -47,9 +44,9 @@
                         </li>
 
                     </ul>
-                    <form class="d-flex my-2 my-lg-0">
-                        <input class="form-control me-sm-2" type="text" placeholder="Cerca..." />
-                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                    <form class="d-flex">
+                        <input class="form-control" type="text" placeholder="Cerca..." />
+                        <button class="btn btn-outline-light p-2 mx-2" type="submit">
                             Cerca
                         </button>
                     </form>
@@ -60,268 +57,278 @@
 
     </header>
 
-    <main class="px-2 px-md-5">
+    <main class="px-2 px-md-5 d-lg-flex justify-content-lg-center container-sm">
 
-        <section class="d-flex justify-content-between  py-4">
-            <h1>Catalogo Libri</h1>
-            <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+        <section id="table-section" class="flex-grow-1">
+            <container class="d-flex justify-content-between  py-4">
+                <h1>Catalogo Libri</h1>
+                <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+            </container>
+
+
+            <container>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Titolo</th>
+                            <th>Data prestito</th>
+                            <th>Stato</th>
+                            <th>Azioni</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>-</td>
+                            <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
+                            <td>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-pencil"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>-</td>
+                            <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
+                            <td>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-pencil"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>18/10/2023</td>
+                            <td><button type="button" class="btn btn-warning btn-sm text-light">In prestito</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-pencil"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>-</td>
+                            <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
+                            <td>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-pencil"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>-</td>
+                            <td><button type="button" class="btn btn-danger btn-sm">Non disponibile</button></td>
+                            <td>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-pencil"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>-</td>
+                            <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
+                            <td>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-pencil"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>21/09/2023</td>
+                            <td><button type="button" class="btn btn-warning btn-sm text-light">In prestito</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-pencil"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>-</td>
+                            <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
+                            <td>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-pencil"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>-</td>
+                            <td><button type="button" class="btn btn-danger btn-sm">Non disponibile</button></td>
+                            <td>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-pencil"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>25/07/2023</td>
+                            <td><button type="button" class="btn btn-warning btn-sm text-light">In prestito</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-pencil"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>-</td>
+                            <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
+                            <td>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-pencil"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>-</td>
+                            <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
+                            <td>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-pencil"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </container>
         </section>
 
 
-        <section>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Titolo</th>
-                        <th>Data prestito</th>
-                        <th>Stato</th>
-                        <th>Azioni</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>-</td>
-                        <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
-                        <td>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-pencil"></i></button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
+        <section id="card-section" class="my-lg-4 m-lg-5">
+            <container id="todo">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h2>Todo</h2>
+                    </div>
 
-                    <tr>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>-</td>
-                        <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
-                        <td>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-pencil"></i></button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>18/10/2023</td>
-                        <td><button type="button" class="btn btn-warning btn-sm text-light">In prestito</button></td>
-                        <td>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-pencil"></i></button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>-</td>
-                        <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
-                        <td>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-pencil"></i></button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
+                    <div class="card-body text-start">
 
-                    <tr>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>-</td>
-                        <td><button type="button" class="btn btn-danger btn-sm">Non disponibile</button></td>
-                        <td>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-pencil"></i></button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>-</td>
-                        <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
-                        <td>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-pencil"></i></button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>21/09/2023</td>
-                        <td><button type="button" class="btn btn-warning btn-sm text-light">In prestito</button></td>
-                        <td>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-pencil"></i></button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
+                        <ul class="list-group">
+                            <li class="list-group-item form-check ">
+                                <input class="form-check-input mx-1" type="checkbox" value="" id="" />
+                                <label class="form-check-label" for=""> Chiamare segretaria </label>
+                            </li>
 
-                    <tr>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>-</td>
-                        <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
-                        <td>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-pencil"></i></button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>-</td>
-                        <td><button type="button" class="btn btn-danger btn-sm">Non disponibile</button></td>
-                        <td>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-pencil"></i></button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>25/07/2023</td>
-                        <td><button type="button" class="btn btn-warning btn-sm text-light">In prestito</button></td>
-                        <td>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-pencil"></i></button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
+                            <li class="list-group-item form-check">
+                                <input class="form-check-input mx-1" type="checkbox" value="" id="" />
+                                <label class="form-check-label" for=""> Mandare avvisi prestiti scaduti </label>
+                            </li>
 
-                    <tr>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>-</td>
-                        <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
-                        <td>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-pencil"></i></button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>-</td>
-                        <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
-                        <td>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-pencil"></i></button>
-                            <button type="button" class="btn btn-outline-secondary btn-sm"><i
-                                    class="fa-solid fa-trash"></i></button>
-                        </td>
-                    </tr>
+                            <li class="list-group-item form-check">
+                                <input class="form-check-input mx-1" type="checkbox" value="" id="" />
+                                <label class="form-check-label" for=""> Ordinare nuovi libri</label>
+                            </li>
+                        </ul>
 
-                </tbody>
-            </table>
-        </section>
-
-        <section class="my-5">
-            <div class="card text-center">
-                <div class="card-header">
-                    <h2>Todo</h2>
+                    </div>
                 </div>
 
-                <div class="card-body text-start">
+            </container>
 
-                    <ul class="list-group">
-                        <li class="list-group-item form-check ">
-                            <input class="form-check-input mx-1" type="checkbox" value="" id="" />
-                            <label class="form-check-label" for=""> Chiamare segretaria </label>
-                        </li>
+            <container id="faq">
+                <div class="card text-center my-4">
+                    <div class="card-header">
+                        <h2>F.A.Q.</h2>
+                    </div>
 
-                        <li class="list-group-item form-check">
-                            <input class="form-check-input mx-1" type="checkbox" value="" id="" />
-                            <label class="form-check-label" for=""> Mandare avvisi prestiti scaduti </label>
-                        </li>
+                    <div class="card-body text-start">
 
-                        <li class="list-group-item form-check">
-                            <input class="form-check-input mx-1" type="checkbox" value="" id="" />
-                            <label class="form-check-label" for=""> Ordinare nuovi libri</label>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-
-        </section>
-
-        <section>
-            <div class="card text-center">
-                <div class="card-header">
-                    <h2>F.A.Q.</h2>
-                </div>
-
-                <div class="card-body text-start">
-
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                            aria-expanded="true" aria-controls="flush-collapseOne">
-                                            Come aggiungere un nuovo libro?
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            Non puoi perchè non funziona :)
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="true" aria-controls="flush-collapseOne">
+                                                Come aggiungere un nuovo libro?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                Non puoi perchè non funziona :)
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <!-- todo faq item 2 collapses the first, but the third doesn't collapse the 2nd -->
-                        <li class="list-group-item">
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                            aria-expanded="true" aria-controls="flush-collapseTwo">
-                                            Come posso accede all'anagrafica utenti?
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            Quale anagrafica utenti?
+                            </li>
+                            <!-- todo faq item 2 collapses the first, but the third doesn't collapse the 2nd -->
+                            <li class="list-group-item">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="true" aria-controls="flush-collapseTwo">
+                                                Come posso accede all'anagrafica utenti?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                Quale anagrafica utenti?
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
 
-                        <li class="list-group-item">
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                            aria-expanded="true" aria-controls="flush-collapseThree">
-                                            Posso usare questa dashboard da mobile?
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            Se per usare intendi guardare certo!
+                            <li class="list-group-item">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                aria-expanded="true" aria-controls="flush-collapseThree">
+                                                Posso usare questa dashboard da mobile?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingThree"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                Se per usare intendi guardare certo!
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
 
+                    </div>
                 </div>
-            </div>
+
+            </container>
 
         </section>
 
