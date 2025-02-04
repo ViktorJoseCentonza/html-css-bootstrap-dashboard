@@ -13,7 +13,16 @@
 </head>
 
 <style>
+    @media screen and (max-width:768px) {
+        #table-section {
 
+            th:nth-child(2),
+            td:nth-child(2) {
+
+                display: none;
+            }
+        }
+    }
 </style>
 
 <body>
@@ -59,7 +68,7 @@
 
     <main class="px-2 px-md-5 d-lg-flex justify-content-lg-center container-md">
 
-        <section id="table-section" class="flex-grow-1">
+        <section id="table-section" class="w-100">
             <container class="d-flex justify-content-between  py-4">
                 <h1>Catalogo Libri</h1>
                 <button type="button" class="btn btn-primary">Aggiungi Libro</button>
@@ -73,7 +82,7 @@
                             <th>Titolo</th>
                             <th>Data prestito</th>
                             <th>Stato</th>
-                            <th>Azioni</th>
+                            <th class="text-center">Azioni</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -82,9 +91,9 @@
                             <td>-</td>
                             <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
                             <td>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-pencil"></i></button>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-trash"></i></button>
                             </td>
                         </tr>
@@ -94,9 +103,9 @@
                             <td>-</td>
                             <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
                             <td>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-pencil"></i></button>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-trash"></i></button>
                             </td>
                         </tr>
@@ -106,9 +115,9 @@
                             <td><button type="button" class="btn btn-warning btn-sm text-light">In prestito</button>
                             </td>
                             <td>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-pencil"></i></button>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-trash"></i></button>
                             </td>
                         </tr>
@@ -117,9 +126,9 @@
                             <td>-</td>
                             <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
                             <td>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-pencil"></i></button>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-trash"></i></button>
                             </td>
                         </tr>
@@ -129,9 +138,9 @@
                             <td>-</td>
                             <td><button type="button" class="btn btn-danger btn-sm">Non disponibile</button></td>
                             <td>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-pencil"></i></button>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-trash"></i></button>
                             </td>
                         </tr>
@@ -140,9 +149,9 @@
                             <td>-</td>
                             <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
                             <td>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-pencil"></i></button>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-trash"></i></button>
                             </td>
                         </tr>
@@ -152,9 +161,9 @@
                             <td><button type="button" class="btn btn-warning btn-sm text-light">In prestito</button>
                             </td>
                             <td>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-pencil"></i></button>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-trash"></i></button>
                             </td>
                         </tr>
@@ -164,9 +173,9 @@
                             <td>-</td>
                             <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
                             <td>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-pencil"></i></button>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-trash"></i></button>
                             </td>
                         </tr>
@@ -175,9 +184,9 @@
                             <td>-</td>
                             <td><button type="button" class="btn btn-danger btn-sm">Non disponibile</button></td>
                             <td>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-pencil"></i></button>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-trash"></i></button>
                             </td>
                         </tr>
@@ -187,9 +196,9 @@
                             <td><button type="button" class="btn btn-warning btn-sm text-light">In prestito</button>
                             </td>
                             <td>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-pencil"></i></button>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-trash"></i></button>
                             </td>
                         </tr>
@@ -199,9 +208,9 @@
                             <td>-</td>
                             <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
                             <td>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-pencil"></i></button>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-trash"></i></button>
                             </td>
                         </tr>
@@ -210,9 +219,9 @@
                             <td>-</td>
                             <td><button type="button" class="btn btn-success btn-sm">Disponibile</button></td>
                             <td>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-pencil"></i></button>
-                                <button type="button" class="btn btn-outline-secondary"><i
+                                <button type="button" class="btn btn-outline-secondary btn-sm"><i
                                         class="fa-solid fa-trash"></i></button>
                             </td>
                         </tr>
