@@ -62,9 +62,9 @@
             <div class="row">
                 <div class="col">
                     <div class="mb-3">
-                        <label for="author-name" class="form-label fw-bold">Nome Autore</label>
-                        <input type="text" class="form-control" name="author-name" id="author-name"
-                            aria-describedby="helpId" placeholder="Inserisci il nome dell'autore" />
+                        <label for="author-name" class="form-label fw-bold ">Nome Autore</label>
+                        <input type="text" class="form-control" name="author-name" id="author-name "
+                            aria-describedby="helpId" placeholder="Inserisci il nome dell'autore" required="true" />
                     </div>
                 </div>
                 <div class="col">
@@ -81,7 +81,7 @@
                     <div class="mb-3">
                         <label for="book-title" class="form-label fw-bold">Titolo</label>
                         <input type="text" class="form-control" name="book-title" id="book-title"
-                            aria-describedby="helpId" placeholder="Inserisci il Titolo" />
+                            aria-describedby="helpId" placeholder="Inserisci il Titolo" required="true" />
                         <small id="helpId" class="form-text text-muted">Titolo versione italiana</small>
                     </div>
                 </div>
@@ -92,8 +92,8 @@
                 <div class="col-12 col-xl-4">
                     <div class="mb-3">
                         <label for="book-genre" class="form-label fw-bold">Genere</label>
-                        <select class="form-select" name="book-genre" id="book-genre">
-                            <option selected>Scegli il genere</option>
+                        <select class="form-select" name="book-genre" id="book-genre" required="true">
+                            <option selected value="">Scegli il genere</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -112,22 +112,17 @@
                     <div class="mb-3">
                         <label for="ISBN#" class="form-label fw-bold">ISBN#</label>
                         <input type="text" class="form-control" name="ISBN#" id="ISBN#" aria-describedby="helpId"
-                            placeholder="Inserisci il codice ISBN#" />
+                            placeholder="Inserisci il codice ISBN#" required="true" />
                     </div>
                 </div>
             </div>
 
             <hr>
 
-            <div class="row">
-
-            </div>
-
-
             <div class="mb-3">
                 <label for="extra-notes" class="form-label fw-bold">Note</label>
                 <textarea class="form-control" name="extra-notes" id="extra-notes" rows="3"
-                    placeholder="Inserisci eventuali note sul libro"></textarea>
+                    placeholder="Inserisci eventuali note sul libro" required="true"></textarea>
             </div>
 
             <div class="form-check">
